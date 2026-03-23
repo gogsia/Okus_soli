@@ -7,24 +7,24 @@ import { useRef } from 'react';
 const highlights = [
   {
     id: 'sourdough',
-    name: 'Sourdough Boule',
-    note: 'Wild-yeast levain, 24-hour cold ferment',
+    name: 'Sourdough Bread',
+    note: 'From our 5-year starter, baked fresh every morning',
     category: 'Bread',
     imageUrl: '/images/menu/sourdough.webp',
   },
   {
-    id: 'croissant',
-    name: 'Butter Croissant',
-    note: '27 layers, laminated by hand',
-    category: 'Pastry',
-    imageUrl: '/images/menu/croissant.webp',
+    id: 'focaccia',
+    name: 'Focaccia Platter',
+    note: 'With flavored butter, capers, young olive oil & specialty salts',
+    category: 'Signature',
+    imageUrl: '/images/menu/focaccia.webp',
   },
   {
-    id: 'ethiopia',
-    name: 'Yirgacheffe, Ethiopia',
-    note: 'Jasmine, blueberry, peach',
-    category: 'Coffee',
-    imageUrl: '/images/menu/ethiopia.webp',
+    id: 'mortadella',
+    name: 'Mortadella Sandwich',
+    note: 'Premium mortadella with house-made pistachio mayo',
+    category: 'Brunch',
+    imageUrl: '/images/menu/croissant.webp',
   },
 ];
 
@@ -46,7 +46,7 @@ export function HomepageMenu() {
           <p
             className="max-w-xl mx-auto text-lg font-serif italic text-secondary"
           >
-            Fresh every morning. Gone by afternoon.
+            Breakfast &amp; brunch served all day. Mon&#8211;Sat, 9&#8211;3.
           </p>
         </div>
 

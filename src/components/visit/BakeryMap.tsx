@@ -4,9 +4,9 @@ import { useRef, useEffect, useState } from 'react';
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
-// Placeholder coordinates — replace with actual bakery location
-const BAKERY_LNG = 14.4378;
-const BAKERY_LAT = 35.8989;
+// Okus Soli — Fausta Vrančića 9, Šibenik, Croatia
+const BAKERY_LNG = 15.8908;
+const BAKERY_LAT = 43.7351;
 
 function MapFallback() {
   return (
@@ -18,7 +18,7 @@ function MapFallback() {
         <circle cx="12" cy="10" r="3" />
       </svg>
       <p className="text-sm font-serif italic text-bark">
-        123 Olive Grove Lane, Mediterranean Quarter
+        Fausta Vran&#269;i&#263;a 9, &#352;ibenik, Croatia
       </p>
       <a
         href={`https://www.google.com/maps/search/?api=1&query=${BAKERY_LAT},${BAKERY_LNG}`}

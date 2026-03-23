@@ -7,7 +7,7 @@ export interface MenuItem {
   id: string;
   name: string;
   description: string;
-  category: 'breads' | 'pastries' | 'coffee' | 'bites';
+  category: 'breads' | 'breakfast' | 'coffee' | 'appetizers';
   imageUrl: string;
   imageAlt: string;
   allergens?: string[];

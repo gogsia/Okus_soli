@@ -17,7 +17,7 @@ const charVariants = {
 export function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
-  const headline = 'Where Craft Meets Comfort';
+  const headline = 'Okus Soli by Pa\u2019kai';
 
   useEffect(() => {
     const video = videoRef.current;
@@ -80,7 +80,7 @@ export function HeroSection() {
           transition={{ delay: 0.1, duration: 0.6 }}
           className="section-label mb-6 text-sun"
         >
-          Artisan Bakery & Coffee
+          Breakfast, Brunch &amp; Artisan Baking &#8212; &#352;ibenik
         </motion.p>
 
         {/* Headline — Character-by-character animation */}
@@ -109,7 +109,7 @@ export function HeroSection() {
           transition={{ delay: 1.2, duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
           className="text-lg md:text-xl mb-10 max-w-xl mx-auto font-serif italic text-cream font-normal"
         >
-          Sourdough baked at dawn. Coffee roasted with care. A place that feels like coming home.
+          Sourdough from a 5-year starter. Focaccia, fresh pastries &amp; specialty coffee. Fausta Vran&#269;i&#263;a 9, &#352;ibenik.
         </motion.p>
 
         {/* CTA */}

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://okussoli.com';
+const BASE_URL = 'https://okus-soli-gamma.vercel.app';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ['', '/menu', '/gallery', '/story', '/why', '/visit'];

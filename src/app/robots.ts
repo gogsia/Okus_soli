@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://okussoli.com/sitemap.xml',
+    sitemap: 'https://okus-soli-gamma.vercel.app/sitemap.xml',
   };
 }

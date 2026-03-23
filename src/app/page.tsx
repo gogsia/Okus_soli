@@ -26,13 +26,13 @@ const HomepageVisit = dynamic(
 );
 
 export const metadata: Metadata = {
-  title: 'Okus Soli — Artisan Bakery & Coffee',
-  description: 'Sourdough baked at dawn. Coffee roasted with care. A place that feels like coming home.',
+  title: 'Okus Soli by Pa\u2019kai \u2014 Breakfast, Brunch & Artisan Baking \u2014 \u0160ibenik',
+  description: 'Breakfast, brunch & artisan baking in \u0160ibenik, Croatia. Sourdough from a 5-year starter, focaccia, specialty coffee. Fausta Vran\u010Di\u0107a 9.',
   openGraph: {
-    title: 'Okus Soli — Artisan Bakery & Coffee',
-    description: 'Sourdough baked at dawn. Coffee roasted with care. A place that feels like coming home.',
+    title: 'Okus Soli by Pa\u2019kai \u2014 \u0160ibenik',
+    description: 'Breakfast, brunch & artisan baking in \u0160ibenik, Croatia. Sourdough from a 5-year starter, focaccia, specialty coffee.',
     type: 'website',
-    siteName: 'Okus Soli',
+    siteName: 'Okus Soli by Pa\u2019kai',
   },
 };
 

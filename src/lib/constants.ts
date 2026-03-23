@@ -6,9 +6,9 @@ export const MOOD_UPDATE_INTERVAL = 60_000; // 1 minute
 // ── Menu Categories ──
 export const MENU_CATEGORIES = [
   { id: 'breads', label: 'Breads', sfx: '/audio/sfx/crust-crackle.mp3' },
-  { id: 'pastries', label: 'Pastries', sfx: '/audio/sfx/paper-rustle.mp3' },
-  { id: 'coffee', label: 'Coffee', sfx: '/audio/sfx/grinder-burst.mp3' },
-  { id: 'bites', label: 'Bites', sfx: '/audio/sfx/knife-board.mp3' },
+  { id: 'breakfast', label: 'Breakfast & Brunch', sfx: '/audio/sfx/knife-board.mp3' },
+  { id: 'coffee', label: 'Coffee & Drinks', sfx: '/audio/sfx/grinder-burst.mp3' },
+  { id: 'appetizers', label: 'Appetizers', sfx: '/audio/sfx/paper-rustle.mp3' },
 ] as const;
 
 export type MenuCategory = typeof MENU_CATEGORIES[number]['id'];
@@ -24,9 +24,8 @@ export const GALLERY_CHAPTERS = [
 
 // ── Business Hours ──
 export const HOURS_DATA = [
-  { day: 'Monday\u2013Friday', open: '07:00', close: '19:00', note: 'Quietest window: 14:00\u201316:00', rushNote: 'Morning rush 08:00\u201309:30' },
-  { day: 'Saturday', open: '08:00', close: '20:00', note: 'Brunch buzz 10:00\u201313:00' },
-  { day: 'Sunday', open: '08:00', close: '18:00', note: 'Slow Sunday mornings. Family-friendly.' },
+  { day: 'Monday\u2013Saturday', open: '09:00', close: '15:00', note: 'Breakfast & brunch all day', rushNote: 'Morning rush 09:00\u201311:00' },
+  { day: 'Sunday', open: 'Closed', close: 'Closed', note: 'See you Monday!' },
 ] as const;
 
 // ── Navigation Links ──
@@ -50,5 +49,5 @@ export const INSTAGRAM_FEED_LIMIT = 12;
 export const INSTAGRAM_DISPLAY_COUNT = 8;
 
 // ── Site Info ──
-export const SITE_URL = 'https://okussoli.com';
-export const SITE_NAME = 'Okus Soli';
+export const SITE_URL = 'https://okus-soli-gamma.vercel.app';
+export const SITE_NAME = 'Okus Soli by Pa\u2019kai';

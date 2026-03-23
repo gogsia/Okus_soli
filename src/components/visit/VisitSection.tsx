@@ -11,9 +11,8 @@ const BakeryMap = dynamic(
 );
 
 const hoursData = [
-  { day: 'Monday–Friday', open: '07:00', close: '19:00', note: 'Quietest window: 14:00–16:00', rushNote: 'Morning rush 08:00–09:30' },
-  { day: 'Saturday', open: '08:00', close: '20:00', note: 'Brunch buzz 10:00–13:00' },
-  { day: 'Sunday', open: '08:00', close: '18:00', note: 'Slow Sunday mornings. Family-friendly.' },
+  { day: 'Monday–Saturday', open: '09:00', close: '15:00', note: 'Breakfast & brunch all day', rushNote: 'Morning rush 09:00–11:00' },
+  { day: 'Sunday', open: 'Closed', close: 'Closed', note: 'See you Monday!' },
 ];
 
 export function VisitSection() {
@@ -87,23 +86,25 @@ export function VisitSection() {
             Find Us
           </h3>
           <address className="not-italic text-sm leading-relaxed text-secondary">
-            <p>123 Olive Grove Lane</p>
-            <p>Mediterranean Quarter</p>
-            <p>Sunstone, ST 10042</p>
+            <p>Fausta Vran&#269;i&#263;a 9</p>
+            <p>&#352;ibenik 22000</p>
+            <p>Croatia</p>
           </address>
           <div className="mt-4 flex gap-4">
             <a
-              href="tel:+1234567890"
+              href="tel:+385991684830"
               className="text-sm transition-colors duration-200 text-hearth"
             >
-              +1 (234) 567-890
+              +385 99 168 4830
             </a>
             <span className="text-earth">|</span>
             <a
-              href="mailto:hello@okussoli.com"
+              href="https://www.instagram.com/okus_solibypakai/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm transition-colors duration-200 text-hearth"
             >
-              hello@okussoli.com
+              @okus_solibypakai
             </a>
           </div>
         </div>
@@ -118,15 +119,15 @@ export function VisitSection() {
           <div className="space-y-3 text-sm text-secondary">
             <p>
               <strong className="text-foreground font-medium">By foot:</strong>{' '}
-              10-minute walk from Old Town Square
+              Short walk from &#352;ibenik Old Town, along Fausta Vran&#269;i&#263;a street
             </p>
             <p>
-              <strong className="text-foreground font-medium">By transit:</strong>{' '}
-              Line 4 to Olive Market stop, 2-minute walk east
+              <strong className="text-foreground font-medium">By car:</strong>{' '}
+              Public parking available nearby in &#352;ibenik city centre
             </p>
             <p>
-              <strong className="text-foreground font-medium">Parking:</strong>{' '}
-              Free street parking on weekends. Municipal lot 50m north.
+              <strong className="text-foreground font-medium">Reservations:</strong>{' '}
+              Call +385 99 168 4830
             </p>
           </div>
         </div>

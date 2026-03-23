@@ -18,79 +18,90 @@ import { MENU_CATEGORIES } from '@/lib/constants';
 
 const categories = MENU_CATEGORIES;
 
-// Sample menu data — in production this comes from Sanity CMS
+// Real Okus Soli by Pa'kai menu items
 const menuItems: MenuItem[] = [
+  // ── Breads ──
   {
-    id: '1', name: 'Sourdough Boule', category: 'breads',
-    description: 'Wild-yeast levain, 24-hour cold ferment. Open crumb, blistered crust.',
-    imageUrl: '/images/menu/sourdough.webp', imageAlt: 'Artisan sourdough boule',
-    isBakersChoice: true, bakersNote: 'Best within 4 hours of bake. Toast it tomorrow.',
+    id: '1', name: 'Sourdough Bread', category: 'breads',
+    description: 'From Chef Krešo\u2019s 5-year sourdough starter. Open crumb, blistered crust, baked fresh every morning.',
+    imageUrl: '/images/menu/sourdough.webp', imageAlt: 'Artisan sourdough bread',
+    isBakersChoice: true, bakersNote: 'The heart of Okus Soli. Our starter is over 5 years old.',
     allergens: ['gluten'],
   },
   {
-    id: '2', name: 'Olive & Rosemary Focaccia', category: 'breads',
-    description: 'High-hydration dough pressed with Kalamata olives and garden rosemary.',
-    imageUrl: '/images/menu/focaccia.webp', imageAlt: 'Olive rosemary focaccia',
-    allergens: ['gluten'],
+    id: '2', name: 'Focaccia', category: 'breads',
+    description: 'High-hydration sourdough focaccia, golden and crisp. Served with flavored butter, capers, young olive oil, and specialty salts.',
+    imageUrl: '/images/menu/focaccia.webp', imageAlt: 'Okus Soli focaccia',
+    isBakersChoice: true, bakersNote: 'Our signature. Best enjoyed warm with the focaccia platter.',
+    allergens: ['gluten', 'dairy'],
   },
   {
-    id: '3', name: 'Seeded Rye', category: 'breads',
-    description: 'Dense, earthy rye with sunflower, flax, and pumpkin seeds.',
-    imageUrl: '/images/menu/rye.webp', imageAlt: 'Seeded rye bread',
-    allergens: ['gluten', 'seeds'],
+    id: '3', name: 'Daily Pastries', category: 'breads',
+    description: 'Rotating selection of fresh pastries and plum buns, baked each morning from our sourdough base.',
+    imageUrl: '/images/menu/croissant.webp', imageAlt: 'Fresh pastries',
+    allergens: ['gluten', 'dairy', 'eggs'],
+  },
+  // ── Breakfast & Brunch ──
+  {
+    id: '4', name: 'Granola with Yogurt & Fruit', category: 'breakfast',
+    description: 'House-made granola, creamy yogurt, and seasonal fruit. A light and fresh start to the day.',
+    imageUrl: '/images/menu/granola.webp', imageAlt: 'Granola bowl with yogurt and fruit',
+    allergens: ['dairy', 'nuts', 'oats'],
   },
   {
-    id: '4', name: 'Butter Croissant', category: 'pastries',
-    description: 'Laminated by hand. 27 layers. Golden, shattering, utterly indecent.',
-    imageUrl: '/images/menu/croissant.webp', imageAlt: 'Butter croissant cross-section',
-    isBakersChoice: true, bakersNote: 'We start folding at 4am. Worth every layer.',
+    id: '5', name: 'Creamy Scrambled Eggs on Brioche', category: 'breakfast',
+    description: 'Silky scrambled eggs served on toasted brioche bread. Simple, perfect.',
+    imageUrl: '/images/menu/sourdough.webp', imageAlt: 'Scrambled eggs on brioche',
     allergens: ['gluten', 'dairy', 'eggs'],
   },
   {
-    id: '5', name: 'Almond Frangipane Tart', category: 'pastries',
-    description: 'Shortcrust, almond cream, toasted flakes. Dusted with powdered sugar.',
-    imageUrl: '/images/menu/frangipane.webp', imageAlt: 'Almond frangipane tart',
-    allergens: ['gluten', 'dairy', 'eggs', 'nuts'], seasonal: true,
+    id: '6', name: 'Poached Eggs on Brioche', category: 'breakfast',
+    description: 'Poached eggs on brioche with fresh salad and house-made basil pesto.',
+    imageUrl: '/images/menu/focaccia.webp', imageAlt: 'Poached eggs with pesto',
+    allergens: ['gluten', 'dairy', 'eggs', 'nuts'],
   },
   {
-    id: '6', name: 'Pain au Chocolat', category: 'pastries',
-    description: 'Same dough, different destiny. Two bars of dark 70% couverture.',
-    imageUrl: '/images/menu/pain-chocolat.webp', imageAlt: 'Pain au chocolat',
-    allergens: ['gluten', 'dairy', 'eggs', 'soy'],
+    id: '7', name: 'Mortadella Sandwich', category: 'breakfast',
+    description: 'Premium mortadella with pistachio mayonnaise on fresh bread. Rich and indulgent.',
+    imageUrl: '/images/menu/croissant.webp', imageAlt: 'Mortadella sandwich with pistachio mayo',
+    isBakersChoice: true, bakersNote: 'The pistachio mayo is made in-house daily.',
+    allergens: ['gluten', 'eggs', 'nuts'],
   },
   {
-    id: '7', name: 'Huila, Colombia', category: 'coffee',
-    description: 'Chocolate, caramel, citrus. Washed process. Medium roast.',
-    imageUrl: '/images/menu/colombia.webp', imageAlt: 'Colombian coffee beans',
+    id: '8', name: 'Vegetarian Breakfast', category: 'breakfast',
+    description: 'Sourdough bread with beet hummus, avocado, feta, arugula, and toasted seeds.',
+    imageUrl: '/images/menu/sourdough.webp', imageAlt: 'Vegetarian breakfast plate',
+    allergens: ['gluten', 'dairy', 'seeds'],
+  },
+  // ── Coffee & Drinks ──
+  {
+    id: '9', name: 'Specialty Coffee', category: 'coffee',
+    description: 'Carefully selected single-origin beans, brewed with attention. Espresso, cappuccino, or filter.',
+    imageUrl: '/images/menu/colombia.webp', imageAlt: 'Specialty coffee',
   },
   {
-    id: '8', name: 'Yirgacheffe, Ethiopia', category: 'coffee',
-    description: 'Jasmine, blueberry, peach. Natural process. Light roast.',
-    imageUrl: '/images/menu/ethiopia.webp', imageAlt: 'Ethiopian coffee beans',
-    isBakersChoice: true, bakersNote: 'Our favorite. Drink it black.',
+    id: '10', name: 'Fresh-Pressed Juices', category: 'coffee',
+    description: 'Seasonal fresh juices, pressed to order every morning.',
+    imageUrl: '/images/menu/ethiopia.webp', imageAlt: 'Fresh pressed juices',
   },
   {
-    id: '9', name: 'Antigua, Guatemala', category: 'coffee',
-    description: 'Brown sugar, apple, cedar. Washed process. Medium-dark roast.',
-    imageUrl: '/images/menu/guatemala.webp', imageAlt: 'Guatemalan coffee beans',
+    id: '11', name: 'Local Wines', category: 'coffee',
+    description: 'A curated selection of Croatian wines from the Dalmatian region.',
+    imageUrl: '/images/menu/guatemala.webp', imageAlt: 'Local Croatian wines',
+  },
+  // ── Appetizers ──
+  {
+    id: '12', name: 'Focaccia Platter', category: 'appetizers',
+    description: 'Warm focaccia served with flavored butter, capers, young olive oil, and specialty salts.',
+    imageUrl: '/images/menu/focaccia.webp', imageAlt: 'Focaccia platter',
+    isBakersChoice: true, bakersNote: 'Perfect for sharing. Our olive oil is locally sourced.',
+    allergens: ['gluten', 'dairy'],
   },
   {
-    id: '10', name: 'Avocado Toast', category: 'bites',
-    description: 'Sourdough base, smashed avocado, poached egg, chili flakes, olive oil.',
-    imageUrl: '/images/menu/avocado-toast.webp', imageAlt: 'Avocado toast on sourdough',
-    allergens: ['gluten', 'eggs'],
-  },
-  {
-    id: '11', name: 'Cheese & Herb Scone', category: 'bites',
-    description: 'Gruyere, chives, black pepper. Warm from the oven.',
-    imageUrl: '/images/menu/scone.webp', imageAlt: 'Cheese and herb scone',
-    allergens: ['gluten', 'dairy', 'eggs'], seasonal: true,
-  },
-  {
-    id: '12', name: 'Granola Bowl', category: 'bites',
-    description: 'House-made oat granola, Greek yogurt, seasonal fruit, honey drizzle.',
-    imageUrl: '/images/menu/granola.webp', imageAlt: 'Granola bowl with fruit',
-    allergens: ['dairy', 'nuts', 'oats'],
+    id: '13', name: 'Daily Soup', category: 'appetizers',
+    description: 'Chef\u2019s daily soup, served with toasted homemade sourdough bread.',
+    imageUrl: '/images/menu/sourdough.webp', imageAlt: 'Daily soup with bread',
+    allergens: ['gluten'],
   },
 ];
 

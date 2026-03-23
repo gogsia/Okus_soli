@@ -35,31 +35,31 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://okussoli.com'),
+  metadataBase: new URL('https://okus-soli-gamma.vercel.app'),
   title: {
-    default: 'Okus Soli — Artisan Bakery & Coffee',
-    template: '%s | Okus Soli',
+    default: 'Okus Soli by Pa\u2019kai \u2014 Breakfast, Brunch & Artisan Baking \u2014 \u0160ibenik',
+    template: '%s | Okus Soli by Pa\u2019kai',
   },
   description:
-    'Sourdough baked at dawn. Coffee roasted with care. A place that feels like coming home.',
-  keywords: ['bakery', 'artisan bread', 'sourdough', 'coffee', 'café', 'Mediterranean', 'pastries'],
+    'Breakfast, brunch & artisan baking in \u0160ibenik, Croatia. Sourdough from a 5-year starter, focaccia, specialty coffee. By Kre\u0161imir & Ksenija Glavina.',
+  keywords: ['Okus Soli', 'Pa\u2019kai', '\u0160ibenik', 'bakery', 'breakfast', 'brunch', 'sourdough', 'focaccia', 'Croatia', 'Dalmatia'],
   alternates: {
-    canonical: 'https://okussoli.com',
+    canonical: 'https://okus-soli-gamma.vercel.app',
   },
   openGraph: {
     type: 'website',
-    siteName: 'Okus Soli',
+    siteName: 'Okus Soli by Pa\u2019kai',
     locale: 'en_US',
-    title: 'Okus Soli — Artisan Bakery & Coffee',
+    title: 'Okus Soli by Pa\u2019kai \u2014 Breakfast, Brunch & Artisan Baking \u2014 \u0160ibenik',
     description:
-      'Sourdough baked at dawn. Coffee roasted with care. A place that feels like coming home.',
-    url: 'https://okussoli.com',
-    images: [{ url: '/images/hero-poster.webp', width: 1200, height: 630, alt: 'Okus Soli — Artisan Bakery & Coffee' }],
+      'Breakfast, brunch & artisan baking in \u0160ibenik, Croatia. Sourdough from a 5-year starter, focaccia, specialty coffee.',
+    url: 'https://okus-soli-gamma.vercel.app',
+    images: [{ url: '/images/hero-poster.webp', width: 1200, height: 630, alt: 'Okus Soli by Pa\u2019kai \u2014 \u0160ibenik' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Okus Soli — Artisan Bakery & Coffee',
-    description: 'Sourdough baked at dawn. Coffee roasted with care. A place that feels like coming home.',
+    title: 'Okus Soli by Pa\u2019kai \u2014 \u0160ibenik',
+    description: 'Breakfast, brunch & artisan baking. Sourdough from a 5-year starter, focaccia, specialty coffee.',
     images: ['/images/hero-poster.webp'],
   },
 };

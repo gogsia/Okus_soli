@@ -51,7 +51,7 @@ export function HomepageVisit() {
           <p
             className="max-w-lg mx-auto text-lg mb-10 font-serif italic text-secondary"
           >
-            123 Olive Grove Lane, Mediterranean Quarter
+            Fausta Vran&#269;i&#263;a 9, &#352;ibenik, Croatia
           </p>
 
           <Link

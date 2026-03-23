@@ -105,8 +105,8 @@ export function AboutSection() {
           <p
             className="max-w-2xl mx-auto text-lg font-serif italic text-secondary"
           >
-            We believe bread is more than sustenance — it&apos;s a language of care,
-            spoken through flour, water, time, and hands.
+            From the owners of Pa&apos;kai &#352;ibenik — breakfast, brunch &amp; artisan baking
+            united in a single concept.
           </p>
         </SectionReveal>
 
@@ -129,21 +129,21 @@ export function AboutSection() {
             <p
               className="drop-cap text-base leading-[1.85] text-foreground"
             >
-              Before the city wakes, before the first light traces the rooftops, our
-              ovens are already breathing. The bakery hums — a rhythm older than
-              memory. Dough folded in the early dark. Flour that still remembers the
-              field it came from.
+              Okus Soli — &quot;Taste of Salt&quot; — was born from the passion of
+              Kre&#353;imir and Ksenija Glavina, who already brought &#352;ibenik the
+              beloved Pa&apos;kai restaurant. Four years of dreaming found a home
+              at Fausta Vran&#269;i&#263;a 9.
             </p>
             <p className="text-base leading-[1.85] text-secondary">
-              Okus Soli was born from a simple conviction: the world doesn&apos;t need
-              more fast food — it needs more slow care. Every loaf that leaves our
-              oven carries hours of patient fermentation, the warmth of human hands,
-              and the quiet confidence that some things are worth doing the old way.
+              Chef Kre&#353;o maintains a sourdough starter cultivated over five years.
+              Every loaf, every focaccia, every pastry begins with that living culture —
+              shaped by hand, fermented with patience, baked with devotion. No shortcuts,
+              no compromises.
             </p>
             <p className="text-base leading-[1.85] text-secondary">
-              Our coffee follows the same philosophy — single-origin, roasted in small
-              batches, brewed with attention. Because whether you&apos;re holding a warm
-              crust or a ceramic cup, the feeling should be the same: <em className="text-hearth">you are home.</em>
+              Breakfast and brunch meet artisan baking in a single concept. Specialty
+              coffee, fresh-pressed juices, local wines — whether you&apos;re holding a
+              warm crust or a ceramic cup, the feeling should be the same: <em className="text-hearth">you belong here.</em>
             </p>
           </SectionReveal>
         </div>

@@ -19,10 +19,10 @@ export function Footer() {
             <p
               className="text-sm leading-relaxed opacity-70 font-serif italic"
             >
-              Sourdough baked at dawn.
+              Breakfast, brunch &amp; artisan baking.
               <br />
-              Coffee roasted with care.
-              <br />A place that feels like home.
+              Sourdough from a 5-year starter.
+              <br />&#352;ibenik, Croatia.
             </p>
           </div>
 
@@ -61,9 +61,8 @@ export function Footer() {
               Hours
             </h4>
             <div className="space-y-2 text-sm opacity-70">
-              <p>Mon–Fri: 07:00–19:00</p>
-              <p>Saturday: 08:00–20:00</p>
-              <p>Sunday: 08:00–18:00</p>
+              <p>Mon–Sat: 09:00–15:00</p>
+              <p>Sunday: Closed</p>
             </div>
           </div>
 
@@ -75,19 +74,13 @@ export function Footer() {
               Connect
             </h4>
             <div className="space-y-2 text-sm opacity-70">
-              <p>123 Olive Grove Lane</p>
-              <p>Mediterranean Quarter</p>
+              <p>Fausta Vran&#269;i&#263;a 9</p>
+              <p>&#352;ibenik, Croatia</p>
               <a
-                href="mailto:hello@okussoli.com"
+                href="tel:+385991684830"
                 className="block hover:opacity-100 transition-opacity"
               >
-                hello@okussoli.com
-              </a>
-              <a
-                href="tel:+1234567890"
-                className="block hover:opacity-100 transition-opacity"
-              >
-                +1 (234) 567-890
+                +385 99 168 4830
               </a>
               <a
                 href="https://www.instagram.com/okus_solibypakai/"
