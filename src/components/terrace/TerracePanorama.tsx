@@ -5,10 +5,10 @@ import { useReducedMotion } from '@/hooks/useReducedMotion';
 import { useMood } from '@/components/mood/MoodProvider';
 
 const PANORAMA_IMAGES: Record<string, string> = {
-  DAWN_CRISP: '/panorama/terrace-morning.jpg',
-  MIDDAY_FULL: '/panorama/terrace-midday.jpg',
-  AMBER_HOUR: '/panorama/terrace-evening.jpg',
-  NOCTURNE: '/panorama/terrace-evening.jpg',
+  DAWN_CRISP: '/images/4.jpg',
+  MIDDAY_FULL: '/images/4.jpg',
+  AMBER_HOUR: '/images/4.jpg',
+  NOCTURNE: '/images/4.jpg',
 };
 
 export function TerracePanorama() {

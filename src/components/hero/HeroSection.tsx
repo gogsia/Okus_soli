@@ -40,7 +40,7 @@ export function HeroSection() {
             videoLoaded ? 'opacity-0' : 'opacity-100'
           }`}
           style={{
-            backgroundImage: "url('/images/hero-poster.webp')",
+            backgroundImage: "url('/images/1.jpg')",
             backgroundColor: 'var(--color-earth)',
           }}
         />
@@ -51,7 +51,7 @@ export function HeroSection() {
           muted
           playsInline
           preload="metadata"
-          poster="/images/hero-poster.webp"
+          poster="/images/1.jpg"
           // @ts-expect-error -- fetchPriority is valid HTML but not yet in React types
           fetchPriority="high"
           onLoadedData={() => setVideoLoaded(true)}

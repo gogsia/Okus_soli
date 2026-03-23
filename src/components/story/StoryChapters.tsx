@@ -119,7 +119,14 @@ function Chapter({ chapter, index }: { chapter: typeof chapters[0]; index: numbe
           <div
             className="w-full h-full rounded-2xl bg-cover bg-center"
             style={{
-              backgroundImage: `url(/images/story/chapter-${chapter.id}.webp)`,
+              backgroundImage: `url(${[
+                '/images/kreso i zena.png',
+                '/images/7.jpg',
+                '/images/4.jpg',
+                '/images/9.jpg',
+                '/images/5.jpg',
+                '/images/Snimka zaslona 2026-03-23 183618.png',
+              ][chapter.id - 1]})`,
               backgroundColor: chapter.bgColor,
             }}
           />

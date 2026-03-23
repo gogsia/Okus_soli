@@ -5,10 +5,10 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 const previewPhotos = [
-  { id: 'p1', src: '/images/gallery/dawn-1.webp', alt: 'Baker arriving before sunrise', span: 'sm:col-span-2 sm:row-span-2' },
-  { id: 'p2', src: '/images/gallery/pour-1.webp', alt: 'Coffee pour', span: '' },
-  { id: 'p3', src: '/images/gallery/rise-2.webp', alt: 'Scoring bread', span: '' },
-  { id: 'p4', src: '/images/gallery/golden-1.webp', alt: 'Golden hour exterior', span: 'col-span-2' },
+  { id: 'p1', src: '/images/Snimka zaslona 2026-03-23 183618.png', alt: 'Chef Krešo shaping dough', span: 'sm:col-span-2 sm:row-span-2' },
+  { id: 'p2', src: '/images/7.jpg', alt: 'Focaccia cross-section', span: '' },
+  { id: 'p3', src: '/images/8.jpg', alt: 'Poached eggs on brioche', span: '' },
+  { id: 'p4', src: '/images/4.jpg', alt: 'Terrace table with coffee', span: 'col-span-2' },
 ];
 
 export function HomepageGallery() {

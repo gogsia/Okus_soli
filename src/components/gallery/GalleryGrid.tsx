@@ -17,23 +17,23 @@ import { GALLERY_CHAPTERS } from '@/lib/constants';
 
 const galleryChapters = GALLERY_CHAPTERS;
 
-// Sample gallery data
+// Real Okus Soli photos by Valerio Baranović
 const photos: GalleryPhoto[] = [
-  { id: 'g1', src: '/images/gallery/dawn-1.webp', alt: 'Baker arriving before sunrise', chapter: 'dawn', caption: '4:47am. The first light hasn\'t arrived yet, but the oven is already warm.', behindTheLens: 'Shot on a winter morning. The baker didn\'t know I was there.' },
-  { id: 'g2', src: '/images/gallery/dawn-2.webp', alt: 'Flour dusted workspace at dawn', chapter: 'dawn', caption: 'The workspace tells the story of yesterday and promises tomorrow.' },
-  { id: 'g3', src: '/images/gallery/dawn-3.webp', alt: 'First dough of the morning', chapter: 'dawn', caption: 'Cold hands, warm dough.' },
-  { id: 'g4', src: '/images/gallery/rise-1.webp', alt: 'Sourdough rising in proofing basket', chapter: 'the-rise', caption: 'Patience is the only ingredient you can\'t buy.', behindTheLens: 'Time-lapse over 6 hours. Watching dough breathe.' },
-  { id: 'g5', src: '/images/gallery/rise-2.webp', alt: 'Scoring bread before baking', chapter: 'the-rise', caption: 'The signature. Every baker has one.' },
-  { id: 'g6', src: '/images/gallery/rise-3.webp', alt: 'Golden loaves emerging from oven', chapter: 'the-rise', caption: 'The moment the crust sings.' },
-  { id: 'g7', src: '/images/gallery/pour-1.webp', alt: 'Coffee being poured into ceramic cup', chapter: 'the-pour', caption: 'Single origin. Single intention.', behindTheLens: 'The steam caught the morning light perfectly. One take.' },
-  { id: 'g8', src: '/images/gallery/pour-2.webp', alt: 'Latte art rosetta pattern', chapter: 'the-pour', caption: 'Milk meets espresso. Art meets morning.' },
-  { id: 'g9', src: '/images/gallery/pour-3.webp', alt: 'Coffee beans in grinder hopper', chapter: 'the-pour', caption: 'From Yirgacheffe to your cup.' },
-  { id: 'g10', src: '/images/gallery/table-1.webp', alt: 'Shared table with bread and coffee', chapter: 'the-table', caption: 'The table is always set. You just have to sit down.' },
-  { id: 'g11', src: '/images/gallery/table-2.webp', alt: 'Hands breaking bread together', chapter: 'the-table', caption: 'Breaking bread is a language older than words.', behindTheLens: 'Two regulars who met here three years ago. Now they come every Saturday.' },
-  { id: 'g12', src: '/images/gallery/table-3.webp', alt: 'Morning light on empty terrace', chapter: 'the-table', caption: 'Before the guests arrive.' },
-  { id: 'g13', src: '/images/gallery/golden-1.webp', alt: 'Bakery exterior at golden hour', chapter: 'golden-hour', caption: 'When the light does this, we stop everything and look.', behindTheLens: 'Waited three weeks for this exact light angle.' },
-  { id: 'g14', src: '/images/gallery/golden-2.webp', alt: 'Olive tree shadow on terracotta tiles', chapter: 'golden-hour', caption: 'The olive tree has been here longer than the bakery.' },
-  { id: 'g15', src: '/images/gallery/golden-3.webp', alt: 'Last coffee of the day', chapter: 'golden-hour', caption: 'The closing ritual.' },
+  { id: 'g1', src: '/images/Snimka zaslona 2026-03-23 183618.png', alt: 'Chef Krešo shaping dough in the kitchen', chapter: 'dawn', caption: 'Before the city wakes, Chef Krešo shapes the day\'s bread by hand.', behindTheLens: 'Photo by Valerio Baranović' },
+  { id: 'g2', src: '/images/9.jpg', alt: 'Fresh sourdough loaves in wooden boxes', chapter: 'dawn', caption: 'From a 5-year starter. Every loaf tells a story.' },
+  { id: 'g3', src: '/images/7.jpg', alt: 'Focaccia cross-section showing open crumb', chapter: 'dawn', caption: 'The crumb speaks. High hydration, slow fermentation.' },
+  { id: 'g4', src: '/images/7.jpg', alt: 'Sourdough focaccia — golden crust and open crumb', chapter: 'the-rise', caption: 'Patience is the only ingredient you can\'t buy.' },
+  { id: 'g5', src: '/images/9.jpg', alt: 'Bread display at the bakery window', chapter: 'the-rise', caption: 'Fresh every morning. Gone by afternoon.' },
+  { id: 'g6', src: '/images/5.jpg', alt: 'Focaccia platter with butter, olives, and bread', chapter: 'the-rise', caption: 'The focaccia platter — young olive oil, specialty salts, capers.' },
+  { id: 'g7', src: '/images/4.jpg', alt: 'Terrace table with coffee and bread', chapter: 'the-pour', caption: 'Morning coffee on the terrace. Šibenik stone, warm light.', behindTheLens: 'Photo by Valerio Baranović' },
+  { id: 'g8', src: '/images/3.jpg', alt: 'Granola bowl with fresh juices', chapter: 'the-pour', caption: 'Fresh-pressed juices and house-made granola.' },
+  { id: 'g9', src: '/images/1.jpg', alt: 'Brunch spread with scrambled eggs and granola', chapter: 'the-pour', caption: 'The full Okus Soli experience.' },
+  { id: 'g10', src: '/images/1.jpg', alt: 'Scrambled eggs on brioche with fresh juice', chapter: 'the-table', caption: 'Creamy scrambled eggs on brioche. Simple, perfect.' },
+  { id: 'g11', src: '/images/8.jpg', alt: 'Poached eggs on brioche with greens', chapter: 'the-table', caption: 'Poached eggs, basil pesto, fresh salad.', behindTheLens: 'Photo by Valerio Baranović' },
+  { id: 'g12', src: '/images/kreso i zena.png', alt: 'Krešimir and Ksenija Glavina — the owners', chapter: 'the-table', caption: 'Krešimir and Ksenija. The heart and soul of Okus Soli.' },
+  { id: 'g13', src: '/images/4.jpg', alt: 'Terrace with stone walls and wooden chairs', chapter: 'golden-hour', caption: 'The terrace at Fausta Vrančića 9.', behindTheLens: 'Photo by Valerio Baranović' },
+  { id: 'g14', src: '/images/5.jpg', alt: 'Bread basket and olive platter on the counter', chapter: 'golden-hour', caption: 'Dalmatian flavors, artisan bread, and honest ingredients.' },
+  { id: 'g15', src: '/images/3.jpg', alt: 'Morning light on granola and green juice', chapter: 'golden-hour', caption: 'Where every morning starts right.' },
 ];
 
 export function GalleryGrid() {

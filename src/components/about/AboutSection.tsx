@@ -117,7 +117,7 @@ export function AboutSection() {
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
-                backgroundImage: "url('/images/baker-hands.webp')",
+                backgroundImage: "url('/images/Snimka zaslona 2026-03-23 183618.png')",
                 backgroundColor: 'var(--color-earth)',
               }}
             />

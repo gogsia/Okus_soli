@@ -10,21 +10,21 @@ const highlights = [
     name: 'Sourdough Bread',
     note: 'From our 5-year starter, baked fresh every morning',
     category: 'Bread',
-    imageUrl: '/images/menu/sourdough.webp',
+    imageUrl: '/images/9.jpg',
   },
   {
     id: 'focaccia',
     name: 'Focaccia Platter',
     note: 'With flavored butter, capers, young olive oil & specialty salts',
     category: 'Signature',
-    imageUrl: '/images/menu/focaccia.webp',
+    imageUrl: '/images/5.jpg',
   },
   {
     id: 'mortadella',
     name: 'Mortadella Sandwich',
     note: 'Premium mortadella with house-made pistachio mayo',
     category: 'Brunch',
-    imageUrl: '/images/menu/croissant.webp',
+    imageUrl: '/images/1.jpg',
   },
 ];
 
