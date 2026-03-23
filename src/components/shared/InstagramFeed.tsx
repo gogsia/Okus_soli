@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { INSTAGRAM_DISPLAY_COUNT } from '@/lib/constants';
 
 interface InstagramPost {
   id: string;
@@ -29,7 +30,7 @@ export function InstagramFeed() {
         if (!res.ok) { setError(true); return; }
         const data = await res.json();
         if (data.posts && data.posts.length > 0) {
-          setPosts(data.posts.slice(0, 8));
+          setPosts(data.posts.slice(0, INSTAGRAM_DISPLAY_COUNT));
         } else {
           setError(true);
         }

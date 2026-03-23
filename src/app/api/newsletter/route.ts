@@ -6,8 +6,17 @@ function isValidEmail(email: string): boolean {
 }
 
 export async function POST(request: Request) {
+  let body: Record<string, unknown>;
   try {
-    const body = await request.json();
+    body = await request.json();
+  } catch {
+    return NextResponse.json(
+      { error: 'Invalid JSON in request body' },
+      { status: 400 }
+    );
+  }
+
+  try {
     const { email } = body;
 
     if (!email || typeof email !== 'string' || !isValidEmail(email)) {

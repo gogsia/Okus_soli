@@ -30,7 +30,7 @@ const photos: GalleryPhoto[] = [
   { id: 'g9', src: '/images/1.jpg', alt: 'Brunch ponuda s kajganom i granolom', chapter: 'the-pour', caption: 'Potpuni Okus Soli doživljaj.' },
   { id: 'g10', src: '/images/1.jpg', alt: 'Kajgana na briochu sa svježim sokom', chapter: 'the-table', caption: 'Kremasta kajgana na briochu. Jednostavno, savršeno.' },
   { id: 'g11', src: '/images/8.jpg', alt: 'Poširana jaja na briochu sa zelenom salatom', chapter: 'the-table', caption: 'Poširana jaja, pesto od bosiljka, svježa salata.', behindTheLens: 'Foto: Valerio Baranović' },
-  { id: 'g12', src: '/images/kreso i zena.png', alt: 'Krešimir i Ksenija Glavina — vlasnici', chapter: 'the-table', caption: 'Krešimir i Ksenija. Srce i duša Okusa Soli.' },
+  { id: 'g12', src: '/images/kreso-i-zena.png', alt: 'Krešimir i Ksenija Glavina — vlasnici', chapter: 'the-table', caption: 'Krešimir i Ksenija. Srce i duša Okusa Soli.' },
   { id: 'g13', src: '/images/4.jpg', alt: 'Terasa s kamenim zidovima i drvenim stolicama', chapter: 'golden-hour', caption: 'Terasa na Fausta Vrančića 9.', behindTheLens: 'Foto: Valerio Baranović' },
   { id: 'g14', src: '/images/5.jpg', alt: 'Košara kruha i pladanj maslina na pultu', chapter: 'golden-hour', caption: 'Dalmatinski okusi, artizanski kruh i pošteni sastojci.' },
   { id: 'g15', src: '/images/3.jpg', alt: 'Jutarnje svjetlo na granoli i zelenom soku', chapter: 'golden-hour', caption: 'Gdje svako jutro počinje ispravno.' },
