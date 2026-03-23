@@ -1,26 +1,256 @@
 @import "tailwindcss";
 
+/* ═══════════════════════════════════════════════════════════════
+   OKUS SOLI — Global Design System
+   ═══════════════════════════════════════════════════════════════ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary */
+  --color-breath: #FDF8F0;
+  --color-earth: #E3D9D2;
+  --color-depth: #3A2C29;
+
+  /* Accent */
+  --color-grove: #7A8B6B;
+  --color-sun: #E4B363;
+  --color-hearth: #C27E5A;
+
+  /* Text */
+  --color-ink: #2E2A28;
+  --color-bark: #4A3B36;
+
+  /* Mood — defaults (overridden by data-mood) */
+  --mood-overlay: transparent;
+  --mood-body-weight: 400;
+  --mood-heading-weight: 600;
+
+  /* Surfaces */
+  --bg-primary: var(--color-breath);
+  --bg-card: #FFFFFF;
+  --text-primary: var(--color-ink);
+  --text-secondary: var(--color-bark);
+
+  /* Transitions */
+  --transition-mood: background-color 1.5s ease, color 0.8s ease;
 }
 
+/* ── Mood Overrides ── */
+[data-mood="DAWN_CRISP"] {
+  --mood-overlay: rgba(249, 224, 160, 0.12);
+  --mood-body-weight: 300;
+  --mood-heading-weight: 500;
+}
+
+[data-mood="MIDDAY_FULL"] {
+  --mood-overlay: transparent;
+  --mood-body-weight: 400;
+  --mood-heading-weight: 600;
+}
+
+[data-mood="AMBER_HOUR"] {
+  --mood-overlay: rgba(228, 179, 99, 0.08);
+  --mood-body-weight: 450;
+  --mood-heading-weight: 650;
+}
+
+[data-mood="NOCTURNE"] {
+  --mood-overlay: rgba(92, 110, 107, 0.06);
+  --mood-body-weight: 500;
+  --mood-heading-weight: 700;
+  --bg-primary: #2A2422;
+  --bg-card: #352E2A;
+  --text-primary: #F5EDE0;
+  --text-secondary: #D4C8BC;
+}
+
+/* ── Tailwind v4 Theme ── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg-primary);
+  --color-foreground: var(--text-primary);
+  --color-breath: #FDF8F0;
+  --color-earth: #E3D9D2;
+  --color-depth: #3A2C29;
+  --color-grove: #7A8B6B;
+  --color-sun: #E4B363;
+  --color-hearth: #C27E5A;
+  --color-ink: #2E2A28;
+  --color-bark: #4A3B36;
+  --color-cream: #F5EDE0;
+  --color-secondary: var(--text-secondary);
+  --color-card: var(--bg-card);
+  --color-night-bg: #2A2422;
+  --font-display: 'Playfair Display', serif;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Inter', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* ── Base ── */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-weight: var(--mood-body-weight);
+  line-height: 1.75;
+  transition: var(--transition-mood);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--mood-heading-weight);
+  transition: var(--transition-mood);
+}
+
+/* ── Mood Overlay (applied to main content) ── */
+.mood-overlay::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: var(--mood-overlay);
+  pointer-events: none;
+  z-index: 1;
+  transition: background 1.5s ease;
+}
+
+/* ── Typography Specials ── */
+.drop-cap::first-letter {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 0.8;
+  float: left;
+  margin: 0.1em 0.12em 0 0;
+  color: var(--color-hearth);
+  padding-bottom: 0.4em;
+}
+
+.section-label {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-grove);
+}
+
+/* ── Linen Texture Overlay ── */
+.texture-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/textures/linen-weave.png');
+  background-size: 400px;
+  opacity: 0.06;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* ── CTA Breathing ── */
+@keyframes breathe {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(228, 179, 99, 0.3); }
+  50% { box-shadow: 0 0 0 12px rgba(228, 179, 99, 0); }
+}
+
+.cta-breathe {
+  animation: breathe 3s ease-in-out infinite;
+}
+
+/* ── Focus Visible ── */
+*:focus-visible {
+  outline: 3px solid var(--color-sun);
+  outline-offset: 4px;
+}
+
+/* ── Skip Link ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-depth);
+  color: var(--color-breath);
+  padding: 0.75rem 1.5rem;
+  z-index: 9999;
+  border-radius: 0 0 8px 8px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ── Smooth Section Entry ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Nav Underline ── */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  right: 50%;
+  height: 1.5px;
+  background: var(--color-sun);
+  transition: left 0.2s ease, right 0.2s ease;
+}
+
+.nav-link:hover::after {
+  left: 0;
+  right: 0;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-earth);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-hearth);
+}
+
+/* ── Gallery Hover Zoom ── */
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }
