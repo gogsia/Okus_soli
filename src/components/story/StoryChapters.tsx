@@ -120,7 +120,7 @@ function Chapter({ chapter, index }: { chapter: typeof chapters[0]; index: numbe
             className="w-full h-full rounded-2xl bg-cover bg-center"
             style={{
               backgroundImage: `url(${[
-                '/images/kreso i zena.png',
+                '/images/kreso-i-zena.png',
                 '/images/7.jpg',
                 '/images/4.jpg',
                 '/images/9.jpg',
