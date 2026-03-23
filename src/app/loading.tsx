@@ -11,7 +11,7 @@ export default function Loading() {
           stroke="currentColor"
           strokeWidth="0.8"
           className="mx-auto mb-4 animate-pulse text-hearth"
-          aria-label="Loading"
+          aria-label="Učitavanje"
         >
           <path d="M12 48V24" />
           <path d="M12 24c-3-2-5-6-5-10 5 1 7 5 5 10z" />
@@ -22,7 +22,7 @@ export default function Loading() {
         <p
           className="text-sm uppercase tracking-[0.15em] text-secondary font-sans"
         >
-          Preparing...
+          Pripremamo...
         </p>
       </div>
     </div>

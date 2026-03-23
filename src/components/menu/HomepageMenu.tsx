@@ -7,22 +7,22 @@ import { useRef } from 'react';
 const highlights = [
   {
     id: 'sourdough',
-    name: 'Sourdough Bread',
-    note: 'From our 5-year starter, baked fresh every morning',
-    category: 'Bread',
+    name: 'Kruh od Kiselog Tijesta',
+    note: 'Iz našeg 5-godišnjeg startera, svježe pečen svako jutro',
+    category: 'Kruh',
     imageUrl: '/images/9.jpg',
   },
   {
     id: 'focaccia',
-    name: 'Focaccia Platter',
-    note: 'With flavored butter, capers, young olive oil & specialty salts',
-    category: 'Signature',
+    name: 'Focaccia Pladanj',
+    note: 'S aromatiziranim maslacem, kaparima, mladim maslinovim uljem i specijalnim solima',
+    category: 'Zaštitni Znak',
     imageUrl: '/images/5.jpg',
   },
   {
     id: 'mortadella',
-    name: 'Mortadella Sandwich',
-    note: 'Premium mortadella with house-made pistachio mayo',
+    name: 'Mortadella Sendvič',
+    note: 'Premium mortadella s domaćom pistacija majonezom',
     category: 'Brunch',
     imageUrl: '/images/1.jpg',
   },
@@ -37,16 +37,16 @@ export function HomepageMenu() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="section-label mb-4">The Daily Offering</p>
+          <p className="section-label mb-4">Dnevna Ponuda</p>
           <h2
             className="text-4xl md:text-5xl lg:text-6xl mb-6 font-display"
           >
-            <span className="text-sun">A Taste</span> of What Awaits
+            <span className="text-sun">Okus</span> Onoga Što Čeka
           </h2>
           <p
             className="max-w-xl mx-auto text-lg font-serif italic text-secondary"
           >
-            Breakfast &amp; brunch served all day. Mon&#8211;Sat, 9&#8211;3.
+            Doručak i brunch cijeli dan. Pon&#8211;Sub, 9&#8211;15.
           </p>
         </div>
 
@@ -88,7 +88,7 @@ export function HomepageMenu() {
             href="/menu"
             className="inline-block px-10 py-4 rounded-full text-sm uppercase tracking-[0.12em] transition-all duration-300 hover:scale-[1.02] bg-sun text-depth font-sans font-medium"
           >
-            See Full Menu
+            Pogledaj Cijeli Jelovnik
           </Link>
         </div>
       </div>

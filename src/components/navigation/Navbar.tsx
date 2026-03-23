@@ -27,7 +27,7 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${headerBg}`}
     >
-      <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between" aria-label="Main navigation">
+      <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between" aria-label="Glavna navigacija">
         {/* Logo */}
         <Link href="/" className="font-display text-2xl tracking-wide">
           <span className="text-hearth">Okus</span>{' '}
@@ -53,7 +53,7 @@ export function Navbar() {
           type="button"
           className="md:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+          aria-label={mobileOpen ? 'Zatvori izbornik' : 'Otvori izbornik'}
           aria-expanded={mobileOpen}
         >
           <span

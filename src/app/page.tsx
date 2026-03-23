@@ -26,11 +26,11 @@ const HomepageVisit = dynamic(
 );
 
 export const metadata: Metadata = {
-  title: 'Okus Soli by Pa\u2019kai \u2014 Breakfast, Brunch & Artisan Baking \u2014 \u0160ibenik',
-  description: 'Breakfast, brunch & artisan baking in \u0160ibenik, Croatia. Sourdough from a 5-year starter, focaccia, specialty coffee. Fausta Vran\u010Di\u0107a 9.',
+  title: 'Okus Soli by Pa\u2019kai \u2014 Doručak, Brunch i Artizanski Kruh \u2014 \u0160ibenik',
+  description: 'Doručak, brunch i artizanski kruh u Šibeniku. Kruh od kiselog tijesta iz 5-godišnjeg startera, focaccia, specialty kava. Fausta Vrančića 9.',
   openGraph: {
     title: 'Okus Soli by Pa\u2019kai \u2014 \u0160ibenik',
-    description: 'Breakfast, brunch & artisan baking in \u0160ibenik, Croatia. Sourdough from a 5-year starter, focaccia, specialty coffee.',
+    description: 'Doručak, brunch i artizanski kruh u Šibeniku. Kruh od kiselog tijesta iz 5-godišnjeg startera, focaccia, specialty kava.',
     type: 'website',
     siteName: 'Okus Soli by Pa\u2019kai',
   },

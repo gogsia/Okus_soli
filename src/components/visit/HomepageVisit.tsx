@@ -22,11 +22,11 @@ export function HomepageVisit() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <p className="section-label mb-4">Come for the Bread</p>
+          <p className="section-label mb-4">Dođite po Kruh</p>
           <h2
             className="text-4xl md:text-5xl lg:text-6xl mb-6 font-display"
           >
-            Your Table <span className="text-hearth">is Waiting</span>
+            Vaš Stol <span className="text-hearth">Čeka</span>
           </h2>
 
           {/* Status */}
@@ -51,14 +51,14 @@ export function HomepageVisit() {
           <p
             className="max-w-lg mx-auto text-lg mb-10 font-serif italic text-secondary"
           >
-            Fausta Vran&#269;i&#263;a 9, &#352;ibenik, Croatia
+            Fausta Vran&#269;i&#263;a 9, &#352;ibenik, Hrvatska
           </p>
 
           <Link
             href="/visit"
             className="cta-breathe inline-block px-10 py-4 rounded-full text-sm uppercase tracking-[0.15em] font-medium transition-all duration-220 hover:scale-[1.02] bg-sun text-depth font-sans"
           >
-            Plan Your Visit
+            Planirajte Posjet
           </Link>
         </motion.div>
       </div>

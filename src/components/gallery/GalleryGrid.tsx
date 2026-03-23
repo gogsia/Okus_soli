@@ -19,21 +19,21 @@ const galleryChapters = GALLERY_CHAPTERS;
 
 // Real Okus Soli photos by Valerio Baranović
 const photos: GalleryPhoto[] = [
-  { id: 'g1', src: '/images/Snimka zaslona 2026-03-23 183618.png', alt: 'Chef Krešo shaping dough in the kitchen', chapter: 'dawn', caption: 'Before the city wakes, Chef Krešo shapes the day\'s bread by hand.', behindTheLens: 'Photo by Valerio Baranović' },
-  { id: 'g2', src: '/images/9.jpg', alt: 'Fresh sourdough loaves in wooden boxes', chapter: 'dawn', caption: 'From a 5-year starter. Every loaf tells a story.' },
-  { id: 'g3', src: '/images/7.jpg', alt: 'Focaccia cross-section showing open crumb', chapter: 'dawn', caption: 'The crumb speaks. High hydration, slow fermentation.' },
-  { id: 'g4', src: '/images/7.jpg', alt: 'Sourdough focaccia — golden crust and open crumb', chapter: 'the-rise', caption: 'Patience is the only ingredient you can\'t buy.' },
-  { id: 'g5', src: '/images/9.jpg', alt: 'Bread display at the bakery window', chapter: 'the-rise', caption: 'Fresh every morning. Gone by afternoon.' },
-  { id: 'g6', src: '/images/5.jpg', alt: 'Focaccia platter with butter, olives, and bread', chapter: 'the-rise', caption: 'The focaccia platter — young olive oil, specialty salts, capers.' },
-  { id: 'g7', src: '/images/4.jpg', alt: 'Terrace table with coffee and bread', chapter: 'the-pour', caption: 'Morning coffee on the terrace. Šibenik stone, warm light.', behindTheLens: 'Photo by Valerio Baranović' },
-  { id: 'g8', src: '/images/3.jpg', alt: 'Granola bowl with fresh juices', chapter: 'the-pour', caption: 'Fresh-pressed juices and house-made granola.' },
-  { id: 'g9', src: '/images/1.jpg', alt: 'Brunch spread with scrambled eggs and granola', chapter: 'the-pour', caption: 'The full Okus Soli experience.' },
-  { id: 'g10', src: '/images/1.jpg', alt: 'Scrambled eggs on brioche with fresh juice', chapter: 'the-table', caption: 'Creamy scrambled eggs on brioche. Simple, perfect.' },
-  { id: 'g11', src: '/images/8.jpg', alt: 'Poached eggs on brioche with greens', chapter: 'the-table', caption: 'Poached eggs, basil pesto, fresh salad.', behindTheLens: 'Photo by Valerio Baranović' },
-  { id: 'g12', src: '/images/kreso i zena.png', alt: 'Krešimir and Ksenija Glavina — the owners', chapter: 'the-table', caption: 'Krešimir and Ksenija. The heart and soul of Okus Soli.' },
-  { id: 'g13', src: '/images/4.jpg', alt: 'Terrace with stone walls and wooden chairs', chapter: 'golden-hour', caption: 'The terrace at Fausta Vrančića 9.', behindTheLens: 'Photo by Valerio Baranović' },
-  { id: 'g14', src: '/images/5.jpg', alt: 'Bread basket and olive platter on the counter', chapter: 'golden-hour', caption: 'Dalmatian flavors, artisan bread, and honest ingredients.' },
-  { id: 'g15', src: '/images/3.jpg', alt: 'Morning light on granola and green juice', chapter: 'golden-hour', caption: 'Where every morning starts right.' },
+  { id: 'g1', src: '/images/Snimka zaslona 2026-03-23 183618.png', alt: 'Chef Krešo oblikuje tijesto u kuhinji', chapter: 'dawn', caption: 'Prije nego se grad probudi, Chef Krešo rukom oblikuje dnevni kruh.', behindTheLens: 'Foto: Valerio Baranović' },
+  { id: 'g2', src: '/images/9.jpg', alt: 'Svježi kruhovi od kiselog tijesta u drvenim kutijama', chapter: 'dawn', caption: 'Iz 5-godišnjeg startera. Svaki kruh priča priču.' },
+  { id: 'g3', src: '/images/7.jpg', alt: 'Presjek focaccie s otvorenom sredinom', chapter: 'dawn', caption: 'Sredina govori. Visoka hidratacija, spora fermentacija.' },
+  { id: 'g4', src: '/images/7.jpg', alt: 'Focaccia od kiselog tijesta — zlatna korica i otvorena sredina', chapter: 'the-rise', caption: 'Strpljenje je jedini sastojak koji ne možete kupiti.' },
+  { id: 'g5', src: '/images/9.jpg', alt: 'Izlog kruha u izlogu pekare', chapter: 'the-rise', caption: 'Svježe svako jutro. Nestane do popodneva.' },
+  { id: 'g6', src: '/images/5.jpg', alt: 'Focaccia pladanj s maslacem, maslinama i kruhom', chapter: 'the-rise', caption: 'Focaccia pladanj — mlado maslinovo ulje, specijalne soli, kapari.' },
+  { id: 'g7', src: '/images/4.jpg', alt: 'Stol na terasi s kavom i kruhom', chapter: 'the-pour', caption: 'Jutarnja kava na terasi. Šibenski kamen, toplo svjetlo.', behindTheLens: 'Foto: Valerio Baranović' },
+  { id: 'g8', src: '/images/3.jpg', alt: 'Zdjela granole sa svježim sokovima', chapter: 'the-pour', caption: 'Svježe cijeđeni sokovi i domaća granola.' },
+  { id: 'g9', src: '/images/1.jpg', alt: 'Brunch ponuda s kajganom i granolom', chapter: 'the-pour', caption: 'Potpuni Okus Soli doživljaj.' },
+  { id: 'g10', src: '/images/1.jpg', alt: 'Kajgana na briochu sa svježim sokom', chapter: 'the-table', caption: 'Kremasta kajgana na briochu. Jednostavno, savršeno.' },
+  { id: 'g11', src: '/images/8.jpg', alt: 'Poširana jaja na briochu sa zelenom salatom', chapter: 'the-table', caption: 'Poširana jaja, pesto od bosiljka, svježa salata.', behindTheLens: 'Foto: Valerio Baranović' },
+  { id: 'g12', src: '/images/kreso i zena.png', alt: 'Krešimir i Ksenija Glavina — vlasnici', chapter: 'the-table', caption: 'Krešimir i Ksenija. Srce i duša Okusa Soli.' },
+  { id: 'g13', src: '/images/4.jpg', alt: 'Terasa s kamenim zidovima i drvenim stolicama', chapter: 'golden-hour', caption: 'Terasa na Fausta Vrančića 9.', behindTheLens: 'Foto: Valerio Baranović' },
+  { id: 'g14', src: '/images/5.jpg', alt: 'Košara kruha i pladanj maslina na pultu', chapter: 'golden-hour', caption: 'Dalmatinski okusi, artizanski kruh i pošteni sastojci.' },
+  { id: 'g15', src: '/images/3.jpg', alt: 'Jutarnje svjetlo na granoli i zelenom soku', chapter: 'golden-hour', caption: 'Gdje svako jutro počinje ispravno.' },
 ];
 
 export function GalleryGrid() {
@@ -183,9 +183,9 @@ export function GalleryGrid() {
                 ref={closeBtnRef}
                 onClick={() => setLightboxPhoto(null)}
                 className="absolute -top-12 right-0 text-white/70 hover:text-white text-sm uppercase tracking-widest"
-                aria-label="Close lightbox"
+                aria-label="Zatvori"
               >
-                Close
+                Zatvori
               </button>
 
               {/* Prev/Next buttons */}
@@ -195,7 +195,7 @@ export function GalleryGrid() {
                     type="button"
                     onClick={(e) => { e.stopPropagation(); navigateLightbox(-1); }}
                     className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 w-10 h-10 rounded-full flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all"
-                    aria-label="Previous photo"
+                    aria-label="Prethodna fotografija"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                       <path d="M15 18l-6-6 6-6" />
@@ -205,7 +205,7 @@ export function GalleryGrid() {
                     type="button"
                     onClick={(e) => { e.stopPropagation(); navigateLightbox(1); }}
                     className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 w-10 h-10 rounded-full flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-all"
-                    aria-label="Next photo"
+                    aria-label="Sljedeća fotografija"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                       <path d="M9 18l6-6-6-6" />

@@ -11,8 +11,8 @@ const BakeryMap = dynamic(
 );
 
 const hoursData = [
-  { day: 'Monday–Saturday', open: '09:00', close: '15:00', note: 'Breakfast & brunch all day', rushNote: 'Morning rush 09:00–11:00' },
-  { day: 'Sunday', open: 'Closed', close: 'Closed', note: 'See you Monday!' },
+  { day: 'Ponedjeljak–Subota', open: '09:00', close: '15:00', note: 'Doručak i brunch cijeli dan', rushNote: 'Jutarnja gužva 09:00–11:00' },
+  { day: 'Nedjelja', open: 'Closed', close: 'Closed', note: 'Vidimo se u ponedjeljak!' },
 ];
 
 export function VisitSection() {
@@ -51,7 +51,7 @@ export function VisitSection() {
           <h3
             className="text-xl mb-6 font-serif font-medium"
           >
-            Opening Hours
+            Radno Vrijeme
           </h3>
           <div className="space-y-4">
             {hoursData.map((h) => (
@@ -83,12 +83,12 @@ export function VisitSection() {
           <h3
             className="text-xl mb-4 font-serif font-medium"
           >
-            Find Us
+            Pronađite Nas
           </h3>
           <address className="not-italic text-sm leading-relaxed text-secondary">
             <p>Fausta Vran&#269;i&#263;a 9</p>
             <p>&#352;ibenik 22000</p>
-            <p>Croatia</p>
+            <p>Hrvatska</p>
           </address>
           <div className="mt-4 flex gap-4">
             <a
@@ -114,20 +114,20 @@ export function VisitSection() {
           <h3
             className="text-xl mb-4 font-serif font-medium"
           >
-            Getting Here
+            Kako Doći
           </h3>
           <div className="space-y-3 text-sm text-secondary">
             <p>
-              <strong className="text-foreground font-medium">By foot:</strong>{' '}
-              Short walk from &#352;ibenik Old Town, along Fausta Vran&#269;i&#263;a street
+              <strong className="text-foreground font-medium">Pješice:</strong>{' '}
+              Kratka šetnja od šibenskog Starog grada, duž ulice Fausta Vrančića
             </p>
             <p>
-              <strong className="text-foreground font-medium">By car:</strong>{' '}
-              Public parking available nearby in &#352;ibenik city centre
+              <strong className="text-foreground font-medium">Automobilom:</strong>{' '}
+              Javni parking dostupan u blizini u centru Šibenika
             </p>
             <p>
-              <strong className="text-foreground font-medium">Reservations:</strong>{' '}
-              Call +385 99 168 4830
+              <strong className="text-foreground font-medium">Rezervacije:</strong>{' '}
+              Nazovite +385 99 168 4830
             </p>
           </div>
         </div>

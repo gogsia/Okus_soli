@@ -199,11 +199,11 @@ export function CoffeeMap() {
   return (
     <div className="mt-16">
       <div className="text-center mb-8">
-        <p className="section-label mb-2">From Origin to Cup</p>
+        <p className="section-label mb-2">Od Podrijetla do Šalice</p>
         <h3
           className="text-2xl md:text-3xl font-display"
         >
-          Where Our <span className="text-sun">Coffee</span> Comes From
+          Odakle Dolazi Naša <span className="text-sun">Kava</span>
         </h3>
       </div>
 
@@ -215,7 +215,7 @@ export function CoffeeMap() {
           onMouseMove={handleMouseMove}
           onMouseLeave={() => setHoveredId(null)}
           onClick={handleClick}
-          aria-label="Interactive coffee origin map showing Colombia, Ethiopia, Guatemala, and Kenya"
+          aria-label="Interaktivna karta podrijetla kave — Kolumbija, Etiopija, Gvatemala i Kenija"
           role="img"
         />
 

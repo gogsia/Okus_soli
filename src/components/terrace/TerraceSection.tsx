@@ -18,14 +18,14 @@ interface Hotspot {
 }
 
 const hotspots: Hotspot[] = [
-  { id: 'olive-grove', label: 'Olive Grove Corner', description: 'Perfect for hot afternoons. The oldest tree provides natural shade all day.', x: 15, y: 40 },
-  { id: 'communal-table', label: 'Long Communal Table', description: 'Where strangers become friends. Seats 12. Always full on weekends.', x: 50, y: 55 },
-  { id: 'window-nook', label: 'Window Reading Nook', description: 'A single chair, morning light, and a book. Our quietest seat.', x: 80, y: 35 },
-  { id: 'herb-garden', label: 'Herb Garden Wall', description: 'Basil, rosemary, thyme — pick your own garnish.', x: 25, y: 70 },
-  { id: 'fire-pit', label: 'Evening Fire Circle', description: 'Lit at sunset. Where coffee becomes conversation.', x: 65, y: 75 },
-  { id: 'counter-seats', label: 'Baker\'s Counter', description: 'Watch the bread being shaped. Front-row seats to the craft.', x: 40, y: 30 },
-  { id: 'family-corner', label: 'Family Corner', description: 'Lower table, wider chairs. Crayons provided. Crumbs welcome.', x: 75, y: 60 },
-  { id: 'sunset-terrace', label: 'Sunset Terrace', description: 'West-facing. The golden hour hits here first. Best seat after 5pm.', x: 90, y: 45 },
+  { id: 'olive-grove', label: 'Kutak Maslinika', description: 'Savršen za vruća popodneva. Najstarije stablo pruža prirodni hlad cijeli dan.', x: 15, y: 40 },
+  { id: 'communal-table', label: 'Dugački Zajednički Stol', description: 'Gdje neznanci postaju prijatelji. 12 mjesta. Uvijek pun vikendom.', x: 50, y: 55 },
+  { id: 'window-nook', label: 'Kutak za Čitanje kod Prozora', description: 'Jedna stolica, jutarnje svjetlo i knjiga. Naše najtiše mjesto.', x: 80, y: 35 },
+  { id: 'herb-garden', label: 'Zid Začinskog Vrta', description: 'Bosiljak, ružmarin, timijan — uberite svoj vlastiti ukras.', x: 25, y: 70 },
+  { id: 'fire-pit', label: 'Večernji Krug kod Vatre', description: 'Upaljen na zalasku sunca. Gdje kava postaje razgovor.', x: 65, y: 75 },
+  { id: 'counter-seats', label: 'Pekarski Pult', description: 'Gledajte kako se kruh oblikuje. Sjedala u prvom redu za zanat.', x: 40, y: 30 },
+  { id: 'family-corner', label: 'Obiteljski Kutak', description: 'Niži stol, šire stolice. Bojice osigurane. Mrvice dobrodošle.', x: 75, y: 60 },
+  { id: 'sunset-terrace', label: 'Terasa za Zalazak Sunca', description: 'Okrenuta zapadu. Zlatni sat ovdje stiže prvi. Najbolje mjesto nakon 17h.', x: 90, y: 45 },
 ];
 
 export function TerraceSection() {
@@ -53,20 +53,20 @@ export function TerraceSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="section-label mb-4">Your New Favorite Spot</p>
+          <p className="section-label mb-4">Vaše Novo Omiljeno Mjesto</p>
           <h2
             className="text-4xl md:text-5xl lg:text-6xl mb-6 font-display"
           >
-            <span className="text-sun">The</span> Terrace
+            <span className="text-sun">Naša</span> Terasa
           </h2>
           <p
             className="max-w-xl mx-auto text-lg font-serif italic text-secondary"
           >
-            Eight unique spots, each with its own character. Explore them all.
+            Osam jedinstvenih mjesta, svako s vlastitim karakterom. Istražite ih sve.
           </p>
           {exploredCount > 0 && (
             <p className="mt-3 text-xs uppercase tracking-widest text-grove" aria-live="polite">
-              {exploredCount} of {hotspots.length} spots explored
+              {exploredCount} od {hotspots.length} mjesta istraženo
             </p>
           )}
         </div>
@@ -137,7 +137,7 @@ export function TerraceSection() {
               <p
                 className="px-6 py-3 rounded-full text-sm bg-black/40 text-white/80 backdrop-blur-sm font-serif italic"
               >
-                Click the golden dots to explore our terrace
+                Kliknite na zlatne točke za istraživanje naše terase
               </p>
             </div>
           )}
@@ -173,7 +173,7 @@ export function TerraceSection() {
             <p
               className="inline-block px-6 py-3 rounded-full text-sm bg-grove text-breath font-sans"
             >
-              You found the perfect spot — all {hotspots.length} explored!
+              Pronašli ste savršeno mjesto — svih {hotspots.length} istraženo!
             </p>
           </motion.div>
         )}

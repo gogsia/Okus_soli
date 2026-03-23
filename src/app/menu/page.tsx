@@ -8,17 +8,17 @@ const CoffeeMap = dynamic(
 );
 
 export const metadata: Metadata = {
-  title: 'Menu — Okus Soli',
-  description: 'The Daily Offering. Artisan breads, pastries, single-origin coffee, and seasonal bites.',
+  title: 'Jelovnik — Okus Soli',
+  description: 'Dnevna ponuda. Artizanski kruhovi, peciva, specialty kava i sezonski zalogaji.',
   alternates: { canonical: 'https://okussoli.com/menu' },
   openGraph: {
-    title: 'Menu — Okus Soli',
-    description: 'The Daily Offering. Artisan breads, pastries, single-origin coffee, and seasonal bites.',
+    title: 'Jelovnik — Okus Soli',
+    description: 'Dnevna ponuda. Artizanski kruhovi, peciva, specialty kava i sezonski zalogaji.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Menu — Okus Soli',
-    description: 'The Daily Offering. Artisan breads, pastries, single-origin coffee, and seasonal bites.',
+    title: 'Jelovnik — Okus Soli',
+    description: 'Dnevna ponuda. Artizanski kruhovi, peciva, specialty kava i sezonski zalogaji.',
   },
 };
 
@@ -28,16 +28,16 @@ export default function MenuPage() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="section-label mb-4">The Daily Offering</p>
+          <p className="section-label mb-4">Dnevna Ponuda</p>
           <h1
             className="text-4xl md:text-5xl lg:text-6xl mb-6 font-display"
           >
-            <span className="text-sun">Our</span> Menu
+            <span className="text-sun">Naš</span> Menu
           </h1>
           <p
             className="max-w-xl mx-auto text-lg font-serif italic text-secondary"
           >
-            Everything baked fresh each morning. When it&apos;s gone, it&apos;s gone.
+            Sve svježe pečeno svako jutro. Kad nestane, nestane.
           </p>
         </div>
 

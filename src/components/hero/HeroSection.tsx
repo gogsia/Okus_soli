@@ -30,7 +30,7 @@ export function HeroSection() {
     <section
       id="hero"
       className="relative w-full h-screen overflow-hidden flex items-center justify-center"
-      aria-label="Hero — Where Craft Meets Comfort"
+      aria-label="Hero — Gdje se zanat susreće s udobnošću"
     >
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
@@ -56,7 +56,7 @@ export function HeroSection() {
           fetchPriority="high"
           onLoadedData={() => setVideoLoaded(true)}
           className="absolute inset-0 w-full h-full object-cover"
-          aria-label="Bakery ambiance — bread scoring, coffee pour, and terrace morning light"
+          aria-label="Ambijent pekare — rezanje kruha, prelijevanje kave i jutarnje svjetlo na terasi"
         >
           <source src="/video/hero-loop.webm" type="video/webm" />
           <source src="/video/hero-loop.mp4" type="video/mp4" />
@@ -80,7 +80,7 @@ export function HeroSection() {
           transition={{ delay: 0.1, duration: 0.6 }}
           className="section-label mb-6 text-sun"
         >
-          Breakfast, Brunch &amp; Artisan Baking &#8212; &#352;ibenik
+          Doručak, Brunch i Artizanski Kruh &#8212; &#352;ibenik
         </motion.p>
 
         {/* Headline — Character-by-character animation */}
@@ -109,7 +109,7 @@ export function HeroSection() {
           transition={{ delay: 1.2, duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
           className="text-lg md:text-xl mb-10 max-w-xl mx-auto font-serif italic text-cream font-normal"
         >
-          Sourdough from a 5-year starter. Focaccia, fresh pastries &amp; specialty coffee. Fausta Vran&#269;i&#263;a 9, &#352;ibenik.
+          Kruh od kiselog tijesta iz 5-godišnjeg startera. Focaccia, svježa peciva i specialty kava. Fausta Vran&#269;i&#263;a 9, &#352;ibenik.
         </motion.p>
 
         {/* CTA */}
@@ -122,7 +122,7 @@ export function HeroSection() {
             href="/menu"
             className="cta-breathe inline-block px-10 py-4 rounded-full text-sm uppercase tracking-[0.15em] font-medium transition-all duration-220 hover:scale-[1.02] bg-sun text-depth font-sans"
           >
-            Explore the Menu
+            Pogledaj Jelovnik
           </Link>
         </motion.div>
 

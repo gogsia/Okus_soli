@@ -7,8 +7,8 @@ import { SectionReveal } from '@/components/shared/SectionReveal';
 const pillars = [
   {
     id: 'craft',
-    label: 'Artisan Craftsmanship',
-    description: 'Every loaf shaped by hand. No two are identical. We reject the uniform in pursuit of the authentic.',
+    label: 'Artizanski Zanat',
+    description: 'Svaki kruh oblikovan rukom. Nijedan nije isti. Odbacujemo uniformnost u potrazi za autentičnošću.',
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12">
         <path d="M24 4C14 4 6 12 6 24c0 8 4 14 10 18h16c6-4 10-10 10-18C42 12 34 4 24 4z" />
@@ -19,8 +19,8 @@ const pillars = [
   },
   {
     id: 'source',
-    label: 'Honest Sourcing',
-    description: 'Single-origin beans. Stone-milled flour. Every ingredient traced to its field, its farmer, its story.',
+    label: 'Pošteno Nabavljanje',
+    description: 'Kava jednog podrijetla. Kameno mljeveno brašno. Svaki sastojak praćen do svog polja, svog poljoprivrednika, svoje priče.',
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12">
         <path d="M24 44V24" />
@@ -32,8 +32,8 @@ const pillars = [
   },
   {
     id: 'community',
-    label: 'Community Table',
-    description: 'More than a bakery — a gathering place. Where strangers share bread and become neighbors.',
+    label: 'Zajednički Stol',
+    description: 'Više od pekare — mjesto okupljanja. Gdje neznanci dijele kruh i postaju susjedi.',
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12">
         <rect x="8" y="20" width="32" height="4" rx="2" />
@@ -47,8 +47,8 @@ const pillars = [
   },
   {
     id: 'ritual',
-    label: 'The Daily Ritual',
-    description: 'Baking is an act of devotion. Each morning begins in darkness, shaping dough by feel, by instinct.',
+    label: 'Dnevni Ritual',
+    description: 'Pečenje je čin predanosti. Svako jutro počinje u mraku, oblikujući tijesto osjećajem, instinktom.',
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-12 h-12">
         <circle cx="24" cy="24" r="18" />
@@ -95,18 +95,18 @@ export function AboutSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <SectionReveal className="text-center mb-16 md:mb-20">
-          <p className="section-label mb-4">Our Philosophy</p>
+          <p className="section-label mb-4">Naša Filozofija</p>
           <h2
             className="text-4xl md:text-5xl lg:text-6xl mb-6 font-display"
           >
-            <span className="text-sun">Handcrafted.</span>{' '}
-            Heartfelt. Home.
+            <span className="text-sun">Ručni rad.</span>{' '}
+            Od srca. Dom.
           </h2>
           <p
             className="max-w-2xl mx-auto text-lg font-serif italic text-secondary"
           >
-            From the owners of Pa&apos;kai &#352;ibenik — breakfast, brunch &amp; artisan baking
-            united in a single concept.
+            Od vlasnika Pa&apos;kai &#352;ibenik — doručak, brunch i artizanski kruh
+            ujedinjeni u jednom konceptu.
           </p>
         </SectionReveal>
 
@@ -129,21 +129,13 @@ export function AboutSection() {
             <p
               className="drop-cap text-base leading-[1.85] text-foreground"
             >
-              Okus Soli — &quot;Taste of Salt&quot; — was born from the passion of
-              Kre&#353;imir and Ksenija Glavina, who already brought &#352;ibenik the
-              beloved Pa&apos;kai restaurant. Four years of dreaming found a home
-              at Fausta Vran&#269;i&#263;a 9.
+              Okus Soli — &quot;Okus Soli&quot; — rođen je iz strasti Krešimira i Ksenije Glavina, koji su Šibeniku već podarili voljeni restoran Pa&apos;kai. Četiri godine sanjanja pronašle su dom na adresi Fausta Vran&#269;i&#263;a 9.
             </p>
             <p className="text-base leading-[1.85] text-secondary">
-              Chef Kre&#353;o maintains a sourdough starter cultivated over five years.
-              Every loaf, every focaccia, every pastry begins with that living culture —
-              shaped by hand, fermented with patience, baked with devotion. No shortcuts,
-              no compromises.
+              Chef Krešo održava starter kiselog tijesta koji se uzgaja više od pet godina. Svaki kruh, svaka focaccia, svako pecivo počinje s tom živom kulturom — oblikovano rukom, fermentirano sa strpljenjem, pečeno s predanošću. Bez prečaca, bez kompromisa.
             </p>
             <p className="text-base leading-[1.85] text-secondary">
-              Breakfast and brunch meet artisan baking in a single concept. Specialty
-              coffee, fresh-pressed juices, local wines — whether you&apos;re holding a
-              warm crust or a ceramic cup, the feeling should be the same: <em className="text-hearth">you belong here.</em>
+              Doručak i brunch susreću artizansko pečenje u jednom konceptu. Specialty kava, svježe cijeđeni sokovi, lokalna vina — bilo da držite toplu koricu ili keramičku šalicu, osjećaj bi trebao biti isti: <em className="text-hearth">ovdje pripadate.</em>
             </p>
           </SectionReveal>
         </div>

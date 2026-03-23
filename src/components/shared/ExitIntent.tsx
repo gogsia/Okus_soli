@@ -44,7 +44,7 @@ export function ExitIntent() {
         onClick={() => setShow(false)}
         role="dialog"
         aria-modal="true"
-        aria-label="Stay a moment?"
+        aria-label="Ostanite trenutak?"
       >
         <motion.div
           initial={{ y: 20, opacity: 0 }}
@@ -57,12 +57,12 @@ export function ExitIntent() {
           <p
             className="text-2xl mb-2 font-display text-depth"
           >
-            Stay a moment?
+            Ostanite trenutak?
           </p>
           <p
             className="text-base mb-8 font-serif italic text-secondary"
           >
-            The bread is almost ready. The coffee is still warm.
+            Kruh je skoro gotov. Kava je još topla.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
@@ -70,14 +70,14 @@ export function ExitIntent() {
               onClick={() => setShow(false)}
               className="px-6 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-[1.02] bg-sun text-depth font-sans font-medium"
             >
-              Explore the Menu
+              Pogledaj Jelovnik
             </Link>
             <button
               type="button"
               onClick={() => setShow(false)}
               className="px-6 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 border-[1.5px] border-earth text-secondary font-sans"
             >
-              Maybe Later
+              Možda Kasnije
             </button>
           </div>
         </motion.div>

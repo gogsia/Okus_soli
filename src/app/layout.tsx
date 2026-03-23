@@ -37,29 +37,29 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://okus-soli-gamma.vercel.app'),
   title: {
-    default: 'Okus Soli by Pa\u2019kai \u2014 Breakfast, Brunch & Artisan Baking \u2014 \u0160ibenik',
+    default: 'Okus Soli by Pa\u2019kai \u2014 Doručak, Brunch i Artizanski Kruh \u2014 \u0160ibenik',
     template: '%s | Okus Soli by Pa\u2019kai',
   },
   description:
-    'Breakfast, brunch & artisan baking in \u0160ibenik, Croatia. Sourdough from a 5-year starter, focaccia, specialty coffee. By Kre\u0161imir & Ksenija Glavina.',
-  keywords: ['Okus Soli', 'Pa\u2019kai', '\u0160ibenik', 'bakery', 'breakfast', 'brunch', 'sourdough', 'focaccia', 'Croatia', 'Dalmatia'],
+    'Doručak, brunch i artizanski kruh u Šibeniku. Kruh od kiselog tijesta iz 5-godišnjeg startera, focaccia, specialty kava. Krešimir i Ksenija Glavina.',
+  keywords: ['Okus Soli', 'Pa\u2019kai', '\u0160ibenik', 'pekara', 'doručak', 'brunch', 'kiselo tijesto', 'focaccia', 'Hrvatska', 'Dalmacija'],
   alternates: {
     canonical: 'https://okus-soli-gamma.vercel.app',
   },
   openGraph: {
     type: 'website',
     siteName: 'Okus Soli by Pa\u2019kai',
-    locale: 'en_US',
-    title: 'Okus Soli by Pa\u2019kai \u2014 Breakfast, Brunch & Artisan Baking \u2014 \u0160ibenik',
+    locale: 'hr_HR',
+    title: 'Okus Soli by Pa\u2019kai \u2014 Doručak, Brunch i Artizanski Kruh \u2014 \u0160ibenik',
     description:
-      'Breakfast, brunch & artisan baking in \u0160ibenik, Croatia. Sourdough from a 5-year starter, focaccia, specialty coffee.',
+      'Doručak, brunch i artizanski kruh u Šibeniku. Kruh od kiselog tijesta iz 5-godišnjeg startera, focaccia, specialty kava.',
     url: 'https://okus-soli-gamma.vercel.app',
     images: [{ url: '/images/hero-poster.webp', width: 1200, height: 630, alt: 'Okus Soli by Pa\u2019kai \u2014 \u0160ibenik' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Okus Soli by Pa\u2019kai \u2014 \u0160ibenik',
-    description: 'Breakfast, brunch & artisan baking. Sourdough from a 5-year starter, focaccia, specialty coffee.',
+    description: 'Doručak, brunch i artizanski kruh. Kruh od kiselog tijesta iz 5-godišnjeg startera, focaccia, specialty kava.',
     images: ['/images/hero-poster.webp'],
   },
 };
@@ -71,7 +71,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="hr"
       className={`${playfair.variable} ${cormorant.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
@@ -79,7 +79,7 @@ export default function RootLayout({
         <MoodProvider>
           {/* Skip to content */}
           <a href="#main" className="skip-link">
-            Skip to content
+            Preskoči na sadržaj
           </a>
 
           <Navbar />

@@ -19,10 +19,10 @@ export function Footer() {
             <p
               className="text-sm leading-relaxed opacity-70 font-serif italic"
             >
-              Breakfast, brunch &amp; artisan baking.
+              Doručak, brunch i artizanski kruh.
               <br />
-              Sourdough from a 5-year starter.
-              <br />&#352;ibenik, Croatia.
+              Kiselo tijesto iz 5-godišnjeg startera.
+              <br />&#352;ibenik, Hrvatska.
             </p>
           </div>
 
@@ -31,15 +31,15 @@ export function Footer() {
             <h4
               className="text-xs uppercase tracking-[0.15em] mb-4 opacity-50 font-sans"
             >
-              Explore
+              Istraži
             </h4>
             <ul className="space-y-2">
               {[
-                { href: '/menu', label: 'Menu' },
-                { href: '/gallery', label: 'Gallery' },
-                { href: '/story', label: 'Our Story' },
-                { href: '/why', label: 'Why We Bake' },
-                { href: '/visit', label: 'Visit' },
+                { href: '/menu', label: 'Jelovnik' },
+                { href: '/gallery', label: 'Galerija' },
+                { href: '/story', label: 'Naša Priča' },
+                { href: '/why', label: 'Zašto Pečemo' },
+                { href: '/visit', label: 'Posjetite nas' },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -58,11 +58,11 @@ export function Footer() {
             <h4
               className="text-xs uppercase tracking-[0.15em] mb-4 opacity-50 font-sans"
             >
-              Hours
+              Radno Vrijeme
             </h4>
             <div className="space-y-2 text-sm opacity-70">
-              <p>Mon–Sat: 09:00–15:00</p>
-              <p>Sunday: Closed</p>
+              <p>Pon–Sub: 09:00–15:00</p>
+              <p>Nedjelja: Zatvoreno</p>
             </div>
           </div>
 
@@ -71,11 +71,11 @@ export function Footer() {
             <h4
               className="text-xs uppercase tracking-[0.15em] mb-4 opacity-50 font-sans"
             >
-              Connect
+              Kontakt
             </h4>
             <div className="space-y-2 text-sm opacity-70">
               <p>Fausta Vran&#269;i&#263;a 9</p>
-              <p>&#352;ibenik, Croatia</p>
+              <p>&#352;ibenik, Hrvatska</p>
               <a
                 href="tel:+385991684830"
                 className="block hover:opacity-100 transition-opacity"
@@ -109,9 +109,9 @@ export function Footer() {
           className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs opacity-40"
           style={{ borderTop: '1px solid rgba(245, 237, 224, 0.15)' }}
         >
-          <p>&copy; {new Date().getFullYear()} Okus Soli. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Okus Soli. Sva prava pridržana.</p>
           <p className="font-serif italic">
-            Baked with love. Built with care.
+            Pečeno s ljubavlju. Građeno s pažnjom.
           </p>
         </div>
       </div>

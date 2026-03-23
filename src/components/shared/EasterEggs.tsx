@@ -28,14 +28,14 @@ export function EasterEggs() {
       if (h === EASTER_EGG_HOURS.sunrise.hour && m < EASTER_EGG_HOURS.sunrise.maxMinutes) {
         showEgg('sunrise', {
           type: 'greeting',
-          title: 'Good morning, early riser',
-          content: 'The ovens are already warm. The first loaves are almost ready. You\'re right on time.',
+          title: 'Dobro jutro, ranoraniče',
+          content: 'Peći su već tople. Prvi kruhovi su skoro gotovi. Stigli ste na vrijeme.',
         });
       } else if (h === EASTER_EGG_HOURS.sunset.hour && m < EASTER_EGG_HOURS.sunset.maxMinutes) {
         showEgg('sunset', {
           type: 'greeting',
-          title: 'Golden hour',
-          content: 'The day is winding down, but there\'s still time for one last cup. The terrace light is perfect right now.',
+          title: 'Zlatni sat',
+          content: 'Dan se bliži kraju, ali još ima vremena za zadnju šalicu. Svjetlo na terasi je savršeno upravo sada.',
         });
       }
     }, 0);
@@ -57,23 +57,23 @@ export function EasterEggs() {
     const handleRecipe = () => {
       showEgg('recipe', {
         type: 'recipe',
-        title: 'Grandmother\'s Focaccia',
-        content: `You found our hidden recipe.\n\n500g strong bread flour\n380ml warm water\n10g salt\n7g active dry yeast\n3 tbsp olive oil\n\nMix flour, yeast, and water. Rest 10 minutes.\nAdd salt and oil. Knead 8 minutes until smooth.\nFirst rise: 1.5 hours, covered.\nStretch into an oiled baking tray.\nDimple with fingers. Drizzle generously with olive oil.\nTop with rosemary, flaky salt, cherry tomatoes.\nSecond rise: 30 minutes.\nBake at 220°C for 22–25 minutes.\n\nShare it with someone you love.`,
+        title: 'Bakin Focaccia Recept',
+        content: `Pronašli ste naš skriveni recept.\n\nSastojci: 500g jakog brašna, 400ml tople vode, 10g soli, 7g aktivnog startera, 50ml maslinovog ulja.\n\nPriprema: Pomiješajte brašno i vodu, ostavite 30 min. Dodajte starter i sol, preklopite 4 puta tijekom 2 sata. Ulijte maslinovo ulje u tavu, rastegnite tijesto, utisnite prstima. Pospite krupnom soli i ružmarinom. Pecite na 220°C 25 min dok ne bude zlatno.\n\nTajna? Strpljenje. Uvijek strpljenje.`,
       });
     };
 
     const handleQuote = () => {
       showEgg('quote', {
         type: 'quote',
-        content: '"Everything you see I owe to spaghetti." — Sophia Loren',
+        content: '"Sve što vidite dugujem špagetima." — Sophia Loren',
       });
     };
 
     const handleAllHotspots = () => {
       showEgg('hotspots', {
         type: 'greeting',
-        title: 'The Perfect Spot',
-        content: 'You\'ve explored every corner of our terrace. Clearly, you belong here. Next time you visit, tell us you found the perfect spot — coffee\'s on us.',
+        title: 'Savršeno Mjesto',
+        content: 'Istražili ste svaki kutak naše terase. Očito, pripadate ovdje. Sljedeći put kad nas posjetite, recite nam da ste pronašli savršeno mjesto — kava je na naš račun.',
       });
     };
 
@@ -152,7 +152,7 @@ export function EasterEggs() {
               <p
                 className="mt-6 text-xs uppercase tracking-widest text-center text-grove"
               >
-                Hidden recipe unlocked
+                Skriveni recept otključan
               </p>
             )}
           </motion.div>

@@ -5,36 +5,36 @@ export const MOOD_UPDATE_INTERVAL = 60_000; // 1 minute
 
 // ── Menu Categories ──
 export const MENU_CATEGORIES = [
-  { id: 'breads', label: 'Breads', sfx: '/audio/sfx/crust-crackle.mp3' },
-  { id: 'breakfast', label: 'Breakfast & Brunch', sfx: '/audio/sfx/knife-board.mp3' },
-  { id: 'coffee', label: 'Coffee & Drinks', sfx: '/audio/sfx/grinder-burst.mp3' },
-  { id: 'appetizers', label: 'Appetizers', sfx: '/audio/sfx/paper-rustle.mp3' },
+  { id: 'breads', label: 'Kruhovi', sfx: '/audio/sfx/crust-crackle.mp3' },
+  { id: 'breakfast', label: 'Doručak i Brunch', sfx: '/audio/sfx/knife-board.mp3' },
+  { id: 'coffee', label: 'Kava i Piće', sfx: '/audio/sfx/grinder-burst.mp3' },
+  { id: 'appetizers', label: 'Predjela', sfx: '/audio/sfx/paper-rustle.mp3' },
 ] as const;
 
 export type MenuCategory = typeof MENU_CATEGORIES[number]['id'];
 
 // ── Gallery Chapters ──
 export const GALLERY_CHAPTERS = [
-  { id: 'dawn', label: 'Dawn' },
-  { id: 'the-rise', label: 'The Rise' },
-  { id: 'the-pour', label: 'The Pour' },
-  { id: 'the-table', label: 'The Table' },
-  { id: 'golden-hour', label: 'Golden Hour' },
+  { id: 'dawn', label: 'Zora' },
+  { id: 'the-rise', label: 'Dizanje' },
+  { id: 'the-pour', label: 'Prelijevanje' },
+  { id: 'the-table', label: 'Stol' },
+  { id: 'golden-hour', label: 'Zlatni Sat' },
 ] as const;
 
 // ── Business Hours ──
 export const HOURS_DATA = [
-  { day: 'Monday\u2013Saturday', open: '09:00', close: '15:00', note: 'Breakfast & brunch all day', rushNote: 'Morning rush 09:00\u201311:00' },
-  { day: 'Sunday', open: 'Closed', close: 'Closed', note: 'See you Monday!' },
+  { day: 'Ponedjeljak\u2013Subota', open: '09:00', close: '15:00', note: 'Doručak i brunch cijeli dan', rushNote: 'Jutarnja gužva 09:00\u201311:00' },
+  { day: 'Nedjelja', open: 'Zatvoreno', close: 'Zatvoreno', note: 'Vidimo se u ponedjeljak!' },
 ] as const;
 
 // ── Navigation Links ──
 export const NAV_LINKS = [
-  { href: '/#about', label: 'About' },
-  { href: '/menu', label: 'Menu' },
-  { href: '/gallery', label: 'Gallery' },
-  { href: '/story', label: 'Our Story' },
-  { href: '/visit', label: 'Visit' },
+  { href: '/#about', label: 'O nama' },
+  { href: '/menu', label: 'Jelovnik' },
+  { href: '/gallery', label: 'Galerija' },
+  { href: '/story', label: 'Naša Priča' },
+  { href: '/visit', label: 'Posjetite nas' },
 ] as const;
 
 // ── Easter Egg Triggers ──

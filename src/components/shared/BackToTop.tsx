@@ -30,7 +30,7 @@ export function BackToTop() {
           style={{
             boxShadow: '0 2px 12px rgba(0,0,0,0.15)',
           }}
-          aria-label="Scroll to top"
+          aria-label="Povratak na vrh"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
             <path d="M12 19V5M5 12l7-7 7 7" />

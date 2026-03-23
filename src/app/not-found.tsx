@@ -13,26 +13,26 @@ export default function NotFound() {
         <h1
           className="text-3xl md:text-4xl mb-4 font-display"
         >
-          This page wandered off
+          Ova stranica je odlutala
         </h1>
         <p
           className="text-lg mb-8 font-serif italic text-secondary"
         >
-          Like a loaf left to proof too long — it&apos;s gone somewhere we didn&apos;t expect.
-          Let&apos;s get you back to familiar ground.
+          Kao kruh koji je predugo dizao — otišao je nekamo gdje ga nismo očekivali.
+          Vratimo vas na poznato tlo.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
             href="/"
             className="px-8 py-3 rounded-full text-sm uppercase tracking-[0.12em] transition-all duration-300 hover:scale-[1.02] bg-sun text-depth font-sans font-medium"
           >
-            Back Home
+            Povratak
           </Link>
           <Link
             href="/menu"
             className="px-8 py-3 rounded-full text-sm uppercase tracking-[0.12em] transition-all duration-300 hover:scale-[1.02] border-[1.5px] border-hearth text-hearth font-sans"
           >
-            See the Menu
+            Pogledaj jelovnik
           </Link>
         </div>
       </div>

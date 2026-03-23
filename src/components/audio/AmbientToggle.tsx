@@ -16,7 +16,7 @@ export function AmbientToggle({ onToggle, enabled }: AmbientToggleProps) {
       onClick={onToggle}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      aria-label={enabled ? 'Mute ambient audio' : 'Enable ambient audio'}
+      aria-label={enabled ? 'Isključi ambijentalni zvuk' : 'Uključi ambijentalni zvuk'}
       aria-pressed={enabled}
       className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300"
       style={{

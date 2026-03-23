@@ -21,17 +21,17 @@ export default function Error({
           aria-hidden="true"
           className="block text-6xl mb-4 font-display text-earth"
         >
-          Oops
+          Ups
         </span>
         <h1
           className="text-3xl md:text-4xl mb-4 font-display"
         >
-          Something went wrong
+          Nešto je pošlo po krivu
         </h1>
         <p
           className="text-lg mb-8 font-serif italic text-secondary"
         >
-          Even the best ovens need a moment to recover. Let&apos;s try again.
+          I najboljim pećima treba trenutak za oporavak. Pokušajmo ponovo.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <button
@@ -39,13 +39,13 @@ export default function Error({
             onClick={reset}
             className="px-8 py-3 rounded-full text-sm uppercase tracking-[0.12em] transition-all duration-300 hover:scale-[1.02] bg-sun text-depth font-sans font-medium"
           >
-            Try Again
+            Pokušaj ponovo
           </button>
           <Link
             href="/"
             className="px-8 py-3 rounded-full text-sm uppercase tracking-[0.12em] transition-all duration-300 hover:scale-[1.02] border-[1.5px] border-hearth text-hearth font-sans"
           >
-            Back Home
+            Povratak
           </Link>
         </div>
       </div>

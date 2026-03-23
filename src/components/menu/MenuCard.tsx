@@ -53,7 +53,7 @@ export function MenuCard({ item }: { item: MenuItem }) {
           <div
             className="absolute top-3 right-3 px-3 py-1 rounded-full text-xs uppercase tracking-widest bg-sun text-depth font-sans font-medium"
           >
-            Baker&apos;s Choice
+            Pekarski Odabir
           </div>
         )}
 
@@ -61,7 +61,7 @@ export function MenuCard({ item }: { item: MenuItem }) {
           <div
             className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs uppercase tracking-widest bg-grove text-breath font-sans font-medium"
           >
-            Seasonal
+            Sezonsko
           </div>
         )}
       </div>

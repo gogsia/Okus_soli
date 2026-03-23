@@ -40,10 +40,10 @@ export function Newsletter() {
         <p
           className="text-lg mb-2 font-serif italic text-cream"
         >
-          Welcome to the table.
+          Dobrodošli za stol.
         </p>
         <p className="text-sm opacity-60 text-cream">
-          You&apos;ll hear from us when something beautiful comes out of the oven.
+          Javit ćemo vam se kad nešto lijepo izađe iz peći.
         </p>
       </motion.div>
     );
@@ -54,15 +54,15 @@ export function Newsletter() {
       <h4
         className="text-xl mb-2 font-serif text-cream"
       >
-        From Our Oven to Your Inbox
+        Iz Naše Peći u Vaš Inbox
       </h4>
       <p className="text-sm mb-6 opacity-60 text-cream">
-        Seasonal menus, new roasts, and the occasional hidden recipe. No spam — just warmth.
+        Sezonski jelovnici, nova prženja i poneki skriveni recept. Bez spama — samo toplina.
       </p>
 
       <form onSubmit={handleSubmit} className="flex gap-2">
         <label htmlFor="newsletter-email" className="sr-only">
-          Email address
+          Email adresa
         </label>
         <input
           id="newsletter-email"
@@ -82,13 +82,13 @@ export function Newsletter() {
           disabled={status === 'loading'}
           className="px-6 py-3 rounded-full text-sm uppercase tracking-widest transition-all duration-200 hover:scale-[1.02] disabled:opacity-60 bg-sun text-depth font-sans font-medium"
         >
-          {status === 'loading' ? '...' : 'Join'}
+          {status === 'loading' ? '...' : 'Pridruži se'}
         </button>
       </form>
 
       {status === 'error' && (
         <p className="text-xs mt-3 text-hearth">
-          Something went wrong. Please try again.
+          Nešto je pošlo po krivu. Pokušajte ponovo.
         </p>
       )}
     </div>

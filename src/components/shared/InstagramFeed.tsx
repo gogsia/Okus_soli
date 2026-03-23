@@ -55,7 +55,7 @@ export function InstagramFeed() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="section-label mb-4">Follow Along</p>
+          <p className="section-label mb-4">Pratite nas</p>
           <h2
             className="text-4xl md:text-5xl mb-4 font-display"
           >
@@ -64,7 +64,7 @@ export function InstagramFeed() {
           <p
             className="max-w-md mx-auto text-base font-serif italic text-secondary"
           >
-            Daily moments from the bakery. Real bread, real light, real life.
+            Svakodnevni trenuci iz pekare. Pravi kruh, pravo svjetlo, pravi život.
           </p>
         </div>
 
@@ -155,7 +155,7 @@ export function InstagramFeed() {
                 <circle cx="12" cy="12" r="5" />
                 <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
               </svg>
-              Follow Us on Instagram
+              Pratite nas na Instagramu
             </a>
           </div>
         )}
